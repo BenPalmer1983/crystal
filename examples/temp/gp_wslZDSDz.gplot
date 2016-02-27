@@ -1,0 +1,11 @@
+set terminal pngcairo size 1080,720 enhanced font 'Verdana,10'
+set output "/code/fitting/example/output/chart.png"
+set grid xtics mxtics ytics mytics back
+set datafile separator ","
+set title "Plot"
+set xlabel "x"
+set ylabel "f(x)"
+set key autotitle columnheader
+plot \
+'/code/fitting/example/output/chart.csv' using 1:2 with points \
+,'/code/fitting/example/output/chart.csv' using 3:4 with lines

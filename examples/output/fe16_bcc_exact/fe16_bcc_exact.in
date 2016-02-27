@@ -1,0 +1,13 @@
+#new
+#OUTDIR fe16_bcc_exact
+#LP 2.87 A
+#X 1 0 0
+#Y 0 1 0
+#Z 0 0 1
+#CC 2 2 2
+#D 0.0 A
+#S -1
+Fe 0 0 0
+Fe 0.5 0.5 0.5
+#end
+

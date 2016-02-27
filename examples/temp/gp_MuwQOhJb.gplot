@@ -1,0 +1,11 @@
+set terminal postscript eps monochrome enhanced blacktext size 8,6
+set output "/code/fitting/example/output/chart1.eps"
+set grid xtics mxtics ytics mytics back
+set datafile separator ","
+set title "Plot"
+set xlabel "x"
+set ylabel "f(x)"
+set key autotitle columnheader
+plot \
+'/code/fitting/example/output/chart1.csv' using 1:2 with points \
+,'/code/fitting/example/output/chart1.csv' using 3:4 with lines
